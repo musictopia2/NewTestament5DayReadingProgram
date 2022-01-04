@@ -1,0 +1,21 @@
+﻿<PageTitle>First Test Page</PageTitle>
+@if (_model is null)
+{
+    return;
+}
+@if (_model.IsCurrentReading == false)
+{
+    <p>This is the weekend.  The next reading is @_model.CurrentReading.ReadDate</p>
+    
+}
+else
+{
+    <p>There is a reading scheduled for @_model.CurrentReading.ReadDate</p>
+    <p>The book that would show up is @_model.CurrentReading.Book and the chapter is @_model.CurrentReading.Chapter</p>
+}
+<p>The day that was checked for testing is @DateToUse</p>
+<div>
+    <BootstrapPrimaryButton OnClick="CheckNewReading">
+    Check Next Days Reading (Test)
+</BootstrapPrimaryButton>
+</div>

@@ -6,3 +6,8 @@ global using Microsoft.AspNetCore.Components;
 global using BasicBlazorLibrary.Components.BaseClasses;
 global using CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.BasicExtensions;
 global using cc = CommonBasicLibraries.BasicDataSettingsAndProcesses.SColorString;
+global using CommonBasicLibraries.BasicDateTimeProcesses;
+global using dd = NewTestamentWasm.Mocks.GlobalMock;
+global using NewTestament5DayLibrary.Core.Services;
+global using NewTestament5DayLibrary.Core.Models;
+global using NewTestamentWasm.Mocks;
