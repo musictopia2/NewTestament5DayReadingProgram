@@ -19,7 +19,7 @@ These are the things I want to accomplish:
 Here are my version plans:
 
 #Version 1
- * will use a mock date and will just show the book and chapter that will be read.
+ * will use a mock date and will just show the book and chapter that will be read. (Done)
  This will be the starting point to prove that its able to capture book and chapter for the day.
  If its Saturday or Sunday, will display a different message
  
@@ -41,4 +41,6 @@ Here are my version plans:
  
  by this time, this project will be completed.
  
+ #Status:
+ I am waiting to finish some projects.  Because I have a library which will be used for the readings.  However, I want to have the best possible performance so I am working  on source generators that may completely eliminate reflection from the library which is very slow.
  
