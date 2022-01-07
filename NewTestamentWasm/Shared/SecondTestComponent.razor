@@ -1,0 +1,40 @@
+﻿<PageTitle>Second Test Page</PageTitle>
+@if (_processing || _model is null)
+{
+    return;
+}
+<LeftOverLayout>
+    <TopContent>
+        <p>The day that was checked for testing is @DateToUse</p>
+        @if (_model.IsCurrentReading)
+        {
+             <div>
+                Verses To Read @_model!.CurrentReading.Book
+            </div>
+        }
+        else
+        {
+            <div>
+                This is the weekend.  The next reading is @_model.CurrentReading.ReadDate
+            </div>
+        }
+    </TopContent>
+    <MainContent>
+        @if (_model.IsCurrentReading)
+        {
+             <ReaderComponent CanFocusFirst="true"
+                         RenderList="_verses"
+                         Height="100%"
+                         DataContext="_tempModel"
+                         Context="verse"
+                         Width="100%">
+                @verse
+            </ReaderComponent>
+        }
+    </MainContent>
+    <BottomContent>
+         <BootstrapPrimaryButton OnClick="CheckNewReading">
+            Check Next Days Reading (Test)
+         </BootstrapPrimaryButton>
+    </BottomContent>
+</LeftOverLayout>

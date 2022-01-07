@@ -8,19 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BasicBlazorLibrary" Version="3.0.1" />
+    <PackageReference Include="BasicBlazorLibrary" Version="3.0.2" />
+    <PackageReference Include="BibleContentLibrary" Version="1.0.2" />
     <PackageReference Include="CommonBasicLibraries" Version="5.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0" PrivateAssets="all" />
     <PackageReference Include="NewTestament5DayLibrary.Core" Version="2.0.2" />
+    <PackageReference Include="Reminders.BibleBlazorCoreLibrary" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
