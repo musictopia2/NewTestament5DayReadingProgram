@@ -24,7 +24,7 @@ Here are my version plans:
  If its Saturday or Sunday, will display a different message
  
  #Version 2
- * will actually show the reading but still for a mock date using the new king james version of the bible
+ * will actually show the reading but still for a mock date using the new king james version of the bible (Done)
 
  #Version 3
  * will allow somebody to change translation
