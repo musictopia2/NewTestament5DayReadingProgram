@@ -2,7 +2,7 @@
 public partial class FirstTestComponent
 {
     [Inject]
-    private YearlyBibleReadingService? _service { get; set; }
+    private YearlyBibleReadingService? Service { get; set; }
     [Parameter]
     public DateOnly DateToUse { get; set; } //so several days can be checked for testing.
     [Parameter]
@@ -11,7 +11,7 @@ public partial class FirstTestComponent
     protected override void OnParametersSet()
     {
         dd.DateToUse = DateToUse;
-        _model = _service!.GetCurrentReadingOnly();
+        _model = Service!.GetCurrentReadingOnly();
         base.OnParametersSet();
     }
     private void CheckNewReading()

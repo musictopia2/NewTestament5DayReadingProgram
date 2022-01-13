@@ -17,3 +17,8 @@ global using NewTestamentWasm.Services;
 global using Reminders.BibleBlazorCoreLibrary.DataAccess;
 global using Reminders.BibleCoreLibrary.DataAccess;
 global using BasicBlazorLibrary.Helpers; //not common enough to put under globals for now.
+global using NewTestamentWasm.TranslationHelpers;
+global using BasicBlazorLibrary.Components.NavigationMenus;
+global using BibleDatabaseLibrary.Entities;
+global using BibleDatabaseLibrary.Services;
+global using Microsoft.JSInterop;

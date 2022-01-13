@@ -1,5 +1,5 @@
 ﻿namespace NewTestamentWasm.Services;
 public class NewKingJamesDefaultTranslationClass : IFlexibleDefaultTranslationService
 {
-    string IFlexibleDefaultTranslationService.DefaultTranslationAbb => "NKJV";
+    string IFlexibleDefaultTranslationService.DefaultTranslationAbb => dd.DefaultTranslation;
 }
