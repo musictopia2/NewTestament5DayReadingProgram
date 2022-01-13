@@ -27,9 +27,9 @@ Here are my version plans:
  * will actually show the reading but still for a mock date using the new king james version of the bible (Done)
 
  #Version 3
- * will allow somebody to change translation
- * will save in local storage (at this point, for ios users, if they don't use this in 7 days, they will lose what translation chosen)
- * still use mock dates
+ * will allow somebody to change translation (done)
+ * will save in local storage (at this point, for ios users, if they don't use this in 7 days, they will lose what translation chosen) (done)
+ * still use mock dates (done)
  * may consider allowing somebody to choose date (temporary)
 
  #Version 4
