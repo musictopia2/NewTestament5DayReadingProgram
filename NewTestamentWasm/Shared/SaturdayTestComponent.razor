@@ -1,3 +1,10 @@
 ﻿@*<FirstTestComponent @bind-DateToUse=_dateToUse />*@
 @*<SecondTestComponent @bind-DateToUse=_dateToUse />*@
-<ThirdTestComponent @bind-DateToUse=_dateToUse />
+<LeftOverLayout>
+    <TopContent>
+        <DateComponent @bind-Value="@_dateToUse" />
+    </TopContent>
+    <MainContent>
+        <ThirdTestComponent @bind-DateToUse=_dateToUse />
+    </MainContent>
+</LeftOverLayout>

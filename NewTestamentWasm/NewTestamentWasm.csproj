@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BasicBlazorLibrary" Version="3.0.3" />
+    <PackageReference Include="BasicBlazorLibrary" Version="3.0.4" />
     <PackageReference Include="BibleContentLibrary" Version="1.0.3" />
-    <PackageReference Include="CommonBasicLibraries" Version="5.0.7" />
+    <PackageReference Include="CommonBasicLibraries" Version="5.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0" PrivateAssets="all" />
     <PackageReference Include="NewTestament5DayLibrary.Core" Version="2.0.2" />
