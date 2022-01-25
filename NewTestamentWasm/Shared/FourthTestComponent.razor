@@ -1,0 +1,56 @@
+﻿<PageTitle>Fourth Test Page</PageTitle>
+@if (_processing || _model is null)
+{
+    return;
+}
+@if (_showTranslation)
+{
+    <BootstrapPrimaryButton OnClick="() => _showTranslation = false">
+        Go Back
+    </BootstrapPrimaryButton>
+    <MobileListBox TValue="TranslationInformation" Context="translation" Data="_translations" OnItemSelected="ChoseTranslationAsync">
+        @translation.TranslationName
+    </MobileListBox>
+    return;
+}
+<VisibleHiddenComponent Visible=@ShowBars>
+    <NavigationBarContainer Title="@_title"
+                            CircleSize="30px"
+                            CircleColor="aqua"
+                            MenuWidth="70vmin"
+                            AlwaysShowBar="true"
+                            MenuList="_menus">
+        <MainContent>
+            <LeftOverLayout>
+                <TopContent>
+                    <p>The date of the current reading is @Picker!.GetCurrentDate</p>
+                    @if (_model.IsCurrentReading)
+                    {
+                         <div>
+                            Verses To Read @_model!.CurrentReading.Book
+                        </div>
+                    }
+                    else
+                    {
+                        <div>
+                            This is the weekend.  The next reading is @_model.CurrentReading.ReadDate
+                        </div>
+                    }
+                </TopContent>
+                <MainContent>
+                    @if (_model.IsCurrentReading)
+                    {
+                         <ReaderComponent CanFocusFirst="true"
+                                     RenderList="_verses"
+                                     Height="100%"
+                                     DataContext="_tempModel"
+                                     Context="verse"
+                                     Width="100%">
+                            @verse
+                        </ReaderComponent>
+                    }
+                </MainContent>
+            </LeftOverLayout>
+        </MainContent>
+    </NavigationBarContainer>
+</VisibleHiddenComponent>

@@ -4,5 +4,6 @@ using NewTestamentWasm;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
-builder.Services.RegisterTestServices();
+//no longer using the test date.
+builder.Services.RegisterTestServices(false);
 await builder.Build().RunAsync();

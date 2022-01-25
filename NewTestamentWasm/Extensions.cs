@@ -1,12 +1,19 @@
 ﻿namespace NewTestamentWasm;
 public static class Extensions
 {
-    public static IServiceCollection RegisterTestServices(this IServiceCollection services)
+    public static IServiceCollection RegisterTestServices(this IServiceCollection services, bool useTestDate)
     {
         services.RegisterBlazorBeginningClasses()
-        .RegisterFlexibleTranslationServices<FlexibleDefaultTranslationClass>() //so can be more flexible.
-        .AddTransient<IDateOnlyPicker, FlexibleMockDate>()
-        .AddScoped<YearlyBibleReadingService>()
+        .RegisterFlexibleTranslationServices<FlexibleDefaultTranslationClass>(); //so can be more flexible.
+        if (useTestDate)
+        {
+            services.AddTransient<IDateOnlyPicker, FlexibleMockDate>();
+        }
+        else
+        {
+            services.RegisterRealDatePicker();
+        }
+        services.AddScoped<YearlyBibleReadingService>()
         .AddScoped<ITranslationStorage, LocalStorageTranslationStorage>() //changing over to localstorage.
         .AddTransient<IBibleContent, BibleContent>();
         return services;
