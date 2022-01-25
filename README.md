@@ -30,7 +30,7 @@ Here are my version plans:
  * will allow somebody to change translation (done)
  * will save in local storage (at this point, for ios users, if they don't use this in 7 days, they will lose what translation chosen) (done)
  * still use mock dates (done)
- * may consider allowing somebody to choose date (temporary)
+ * allow to enter new dates to prove it will work into the future (done)
 
  #Version 4
  * will finally use real date
