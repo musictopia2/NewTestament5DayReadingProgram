@@ -41,6 +41,4 @@ Here are my version plans:
  
  by this time, this project will be completed.
  
- #Status:
- I am waiting to finish some projects.  Because I have a library which will be used for the readings.  However, I want to have the best possible performance so I am working  on source generators that may completely eliminate reflection from the library which is very slow.
  
