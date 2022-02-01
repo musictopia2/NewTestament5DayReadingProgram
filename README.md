@@ -2,10 +2,11 @@
 This is a web assembly app where it allows people to participate in a program to read through the entire new testament in one year by reading Monday through Friday
 
 Installation Instructions:
-None yet.
+Temporary instructions is to just run the project in visual studio.
+I will later create an azure static site.  The repository for azure static has to be private otherwise, if a person forks it and makes changes, then it would publish to my azure static site which is not good.
 
 Known Issues:
-Anybody on IPhone or IPad, if they don't go into this for 7 days, then any local storage stuff will be deleted.
+Anybody on IPhone or IPad, if they don't go into this for 7 days, then any local storage stuff will be deleted.  This means if they go 7 days without doing the reading, then when going back in, will reload from the current day so those days would permanantly be skipped.  There is nothing I can do about it unfortunately because of the restrictions that apple places.
 
 Roadmap:
 
@@ -36,9 +37,8 @@ Here are my version plans:
  * will finally use real date
  * by this time, it is proven to work for all dates (even years into the future)
 
- #Version 5
+ #Version 5 (done)
  * will keep track of progress for the readings in local storage.
  
- by this time, this project will be completed.
- 
+ the last stage is testing.   I will go ahead and wait some days to show I can catch up.  The final test would have to be at the end of the year.
  
