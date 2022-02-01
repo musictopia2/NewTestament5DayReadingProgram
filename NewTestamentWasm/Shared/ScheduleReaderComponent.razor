@@ -1,0 +1,61 @@
+﻿<PageTitle>Fourth Test Page</PageTitle>
+@if (_processing || _model is null)
+{
+    return;
+}
+@if (_showTranslation)
+{
+    <BootstrapPrimaryButton OnClick="() => _showTranslation = false">
+        Go Back
+    </BootstrapPrimaryButton>
+    <MobileListBox TValue="TranslationInformation" Context="translation" Data="_translations" OnItemSelected="ChoseTranslationAsync">
+        @translation.TranslationName
+    </MobileListBox>
+    return;
+}
+<VisibleHiddenComponent Visible=@ShowBars>
+    <NavigationBarContainer Title="@_title"
+                            CircleSize="30px"
+                            CircleColor="aqua"
+                            MenuWidth="70vmin"
+                            AlwaysShowBar="true"
+                            MenuList="_menus">
+        <MainContent>
+            <LeftOverLayout>
+                <TopContent>
+                    
+                    @if (_model.IsCurrentReading)
+                    {
+                         <div>
+                            Verses To Read @_model!.CurrentReading.Book For Date @_model.CurrentReading.ReadDate.ToDateOnly();
+                        </div>
+                    }
+                    else
+                    {
+                        <div>
+                            No current readings.  The next reading is @_model.CurrentReading.ReadDate.ToDateOnly();
+                        </div>
+                    }
+                </TopContent>
+                <MainContent>
+                    @if (_model.IsCurrentReading)
+                    {
+                         <ReaderComponent CanFocusFirst="true"
+                                     RenderList="_verses"
+                                     Height="100%"
+                                     DataContext="_tempModel"
+                                     Context="verse"
+                                     Width="100%">
+                            @verse
+                        </ReaderComponent>
+                    }
+                </MainContent>
+                <BottomContent>
+                    <BootstrapPrimaryButton OnClick="FinishReadingAsync">
+                        Finish Current Day's Reading
+                     </BootstrapPrimaryButton>
+                </BottomContent>
+            </LeftOverLayout>
+        </MainContent>
+    </NavigationBarContainer>
+</VisibleHiddenComponent>

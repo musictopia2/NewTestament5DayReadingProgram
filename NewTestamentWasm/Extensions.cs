@@ -15,7 +15,9 @@ public static class Extensions
         }
         services.AddScoped<YearlyBibleReadingService>()
         .AddScoped<ITranslationStorage, LocalStorageTranslationStorage>() //changing over to localstorage.
-        .AddTransient<IBibleContent, BibleContent>();
+        .AddTransient<IBibleContent, BibleContent>()
+        .AddScoped<IScheduleService, ScheduleService>()
+        .AddScoped<IScheduleStorage, LocalStorageScheduler>();
         return services;
     }
 }

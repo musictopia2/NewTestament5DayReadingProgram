@@ -22,3 +22,4 @@ global using BasicBlazorLibrary.Components.NavigationMenus;
 global using BibleDatabaseLibrary.Entities;
 global using BibleDatabaseLibrary.Services;
 global using Microsoft.JSInterop;
+global using NewTestamentWasm.ScheduleHelpers;
