@@ -18,21 +18,21 @@ These are the things I want to accomplish:
 
 Here are my version plans:
 
-#Version 1
+#Version 1 (done)
  * will use a mock date and will just show the book and chapter that will be read. (Done)
  This will be the starting point to prove that its able to capture book and chapter for the day.
  If its Saturday or Sunday, will display a different message
  
- #Version 2
+ #Version 2 (done)
  * will actually show the reading but still for a mock date using the new king james version of the bible (Done)
 
- #Version 3
+ #Version 3 (done)
  * will allow somebody to change translation (done)
  * will save in local storage (at this point, for ios users, if they don't use this in 7 days, they will lose what translation chosen) (done)
  * still use mock dates (done)
  * allow to enter new dates to prove it will work into the future (done)
 
- #Version 4
+ #Version 4 (done)
  * will finally use real date
  * by this time, it is proven to work for all dates (even years into the future)
 
@@ -41,6 +41,4 @@ Here are my version plans:
  
  by this time, this project will be completed.
  
- #Status:
- I am waiting to finish some projects.  Because I have a library which will be used for the readings.  However, I want to have the best possible performance so I am working  on source generators that may completely eliminate reflection from the library which is very slow.
  
