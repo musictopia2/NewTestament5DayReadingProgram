@@ -15,7 +15,7 @@ public class ScheduleService : IScheduleService
         DailyReaderModel model = list.First(x => x.Completed == false);
         CurrentModel output = new();
         output.CurrentReading = model;
-        output.IsCurrentReading = _picker.GetCurrentDate <= model.ReadDate.ToDateOnly();
+        output.IsCurrentReading = _picker.GetCurrentDate >= model.ReadDate.ToDateOnly();
         return output;
     }
     async Task<BasicList<DailyReaderModel>> IScheduleService.GetReadingListAsync()
