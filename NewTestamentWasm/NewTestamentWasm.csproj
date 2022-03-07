@@ -8,13 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BasicBlazorLibrary" Version="3.0.4" />
-    <PackageReference Include="BibleContentLibrary" Version="1.0.3" />
-    <PackageReference Include="CommonBasicLibraries" Version="5.0.8" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.0" PrivateAssets="all" />
-    <PackageReference Include="NewTestament5DayLibrary.Core" Version="2.0.2" />
-    <PackageReference Include="Reminders.BibleBlazorCoreLibrary" Version="2.0.1" />
+    <PackageReference Include="BasicBlazorLibrary" Version="4.0.1" />
+    <PackageReference Include="BibleContentLibrary" Version="2.0.1" />
+    <PackageReference Include="CommonBasicLibraries" Version="7.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.2" PrivateAssets="all" />
+    <PackageReference Include="NewTestament5DayLibrary.Core" Version="3.0.1" />
+    <PackageReference Include="Reminders.BibleBlazorCoreLibrary" Version="3.0.1" />
   </ItemGroup>
 
   <ItemGroup>
